@@ -1,0 +1,85 @@
+<html>
+
+    <head>
+        <title>Weather</title>
+    </head>
+    <style>
+        body{
+            margin: 0;
+            padding:0;
+            background:linear-gradient(rgb(255, 255, 255),rgb(0, 0, 36));
+             cursor:pointer;
+        
+        }
+        #button{
+            padding-top:15px;
+        }
+        button{
+            border:2px solid rgb(255, 230, 0);
+            color:rgb(1, 24, 45);
+            border-radius: 5px;
+            height:30px;
+            width:65px;
+           text-align: center;
+           font-size:15px;
+          
+        }
+
+         button:hover{
+            border:2px solid rgb(16, 55, 71);
+            color:rgb(253, 253, 253);
+            background-color: rgb(10, 0, 65);
+            border-radius: 5px;
+            border-color: aliceblue;
+            height:30px;
+            width:65px;
+            font-size: 22px;
+           text-align: center;
+           font-size:1em;
+           
+        
+        }
+
+            
+    </style>
+
+    <body >
+
+        <center>
+
+            <img src="sunny.jpg" id="weather" width="100%" height="90%">
+             <div id="button" >
+            <button onclick="sunny()" >Sunny</button>
+            <button onclick="cloudy()" >Cloudy</button>
+            <button onclick="rainy()" >Rainy</button>
+            <button onclick="wintry()" >Wintry</button>
+            <button onclick="springy()">Springy</button></div>
+          
+        </center>
+
+        <script>
+
+            function sunny(){
+                document.getElementById('weather').src="sunny.jpg"
+            }
+
+             function cloudy(){
+                document.getElementById('weather').src="cloudy.jpg"
+            }
+
+            function rainy(){
+                document.getElementById('weather').src="rainy.jpg"
+            }
+
+             function wintry(){
+                document.getElementById('weather').src="wintry.jpg"
+            }
+
+             function springy(){
+                document.getElementById('weather').src="springy.jpg"
+            }
+
+        </script>
+    </body>
+
+</html>
